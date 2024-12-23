@@ -1,0 +1,16 @@
+/* 환경 변수 기반 CSS 변수 정의 */
+:root {
+    --primary-color: ${import.meta.env.VITE_PRIMARY_COLOR};
+    --secondary-color: ${import.meta.env.VITE_SECONDARY_COLOR};
+    --background-color: ${import.meta.env.VITE_BACKGROUND_COLOR};
+    --text-color: ${import.meta.env.VITE_TEXT_COLOR};
+    --font-family-primary: ${import.meta.env.VITE_FONT_FAMILY_PRIMARY};
+  }
+  
+  body {
+    font-family: var(--font-family-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }

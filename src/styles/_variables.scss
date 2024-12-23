@@ -1,0 +1,5 @@
+// SCSS 변수
+$secondary-color: #2ecc71; // CSS 변수와 동일한 색상 값
+
+// 필요하면 다른 변수를 추가로 정의
+$secondary-color-dark: darken($secondary-color, 10%);

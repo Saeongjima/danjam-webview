@@ -1,0 +1,12 @@
+@import '../styles/_variables';
+
+// 방법 1: SCSS 변수 사용
+.signupPage {
+  background-color: darken($secondary-color, 10%);
+}
+
+// 방법 2: CSS 변수와 CSS의 filter 활용
+.signupPage {
+  background-color: var(--secondary-color);
+  filter: brightness(90%);
+}
